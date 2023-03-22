@@ -5,15 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-public class UrlShortenerApplication extends SpringBootServletInitializer {
+public class UrlShortenerApplication {
 
-
-    public static void main(String[] args) {
-		SpringApplication.run(UrlShortenerApplication.class, args);
-    }
-
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(serverTestApplication.class);
-    }
+     public static void main(String[] args) {
+		
+         SpringApplication.run(UrlShortenerApplication.class, args);
+     }
 }
